@@ -3,7 +3,11 @@
 let cli = require('heroku-cli-util');
 
 function run (context) {
-  cli.debug(context);
+  cli.debug({
+    context,
+    arch: process.arch,
+    platform: process.platform,
+  });
 }
 
 module.exports = {
