@@ -7,6 +7,7 @@ function run (context) {
     context,
     arch: process.arch,
     platform: process.platform,
+    term: process.env.TERM,
   });
 }
 
