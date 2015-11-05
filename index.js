@@ -8,3 +8,7 @@ exports.topic = {
 exports.commands = [
   require('./commands/debug')
 ];
+
+exports.postInstallHelp = `
+Help debug your CLI.
+`;
