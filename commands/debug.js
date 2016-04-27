@@ -1,6 +1,6 @@
-'use strict';
+'use strict'
 
-let cli = require('heroku-cli-util');
+let cli = require('heroku-cli-util')
 
 function run (context) {
   cli.debug({
@@ -8,11 +8,11 @@ function run (context) {
     arch: process.arch,
     platform: process.platform,
     term: process.env.TERM,
-  });
+  })
 }
 
 module.exports = {
   topic: 'debug',
   description: 'Outputs debugging info',
   run: cli.command(run),
-};
+}
