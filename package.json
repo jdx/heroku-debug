@@ -13,10 +13,12 @@
   "license": "ISC",
   "main": "index.js",
   "scripts": {
-    "test": "mocha && jshint ."
+    "test": "mocha && standard"
   },
   "dependencies": {
     "heroku-cli-util": "^5.0.2"
   },
-  "devDependencies": {}
+  "devDependencies": {
+    "standard": "6.0.8"
+  }
 }
