@@ -7,12 +7,12 @@ function run (context) {
     context,
     arch: process.arch,
     platform: process.platform,
-    term: process.env.TERM,
+    term: process.env.TERM
   })
 }
 
 module.exports = {
   topic: 'debug',
   description: 'Outputs debugging info',
-  run: cli.command(run),
+  run: cli.command(run)
 }
