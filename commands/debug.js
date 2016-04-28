@@ -5,6 +5,7 @@ let cli = require('heroku-cli-util')
 function run (context) {
   cli.debug({
     context,
+    argv: process.argv,
     arch: process.arch,
     platform: process.platform,
     term: process.env.TERM
