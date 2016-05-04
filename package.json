@@ -16,9 +16,10 @@
     "test": "mocha && standard"
   },
   "dependencies": {
-    "heroku-cli-util": "^5.0.2"
+    "heroku-cli-util": "^5.0.2",
+    "inquirer": "1.0.2"
   },
   "devDependencies": {
-    "standard": "6.0.8"
+    "standard": "7.0.0"
   }
 }
