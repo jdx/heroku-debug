@@ -13,5 +13,5 @@ module.exports = {
   topic: 'debug',
   command: 'prompt',
   description: 'Outputs debugging info',
-  run: co.wrap(cli.command(run))
+  run: cli.command(co.wrap(run))
 }
