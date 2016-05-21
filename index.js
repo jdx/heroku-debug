@@ -7,5 +7,6 @@ exports.topic = {
 
 exports.commands = [
   require('./commands/debug'),
-  require('./commands/prompt')
+  require('./commands/prompt'),
+  require('./commands/action')
 ]
