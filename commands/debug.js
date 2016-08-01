@@ -9,7 +9,8 @@ function run (context) {
     argv: process.argv,
     arch: process.arch,
     platform: process.platform,
-    term: process.env.TERM
+    term: process.env.TERM,
+    'dist-tag': 'alpha'
   })
 }
 
