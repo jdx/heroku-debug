@@ -1,20 +1,20 @@
 'use strict'
 
-const co = require('co')
-const cli = require('heroku-cli-util')
+const {Command} = require('heroku-command')
 
-function run (context) {
-  cli.debug({
-    context,
-    argv: process.argv,
-    arch: process.arch,
-    platform: process.platform,
-    term: process.env.TERM
-  })
+class Debug extends Command {
+  async run () {
+    this.inspect({
+      this: this,
+      argv: process.argv,
+      arch: process.arch,
+      platform: process.platform,
+      term: process.env.TERM
+    })
+  }
 }
 
-module.exports = {
-  topic: 'debug',
-  description: 'Outputs debugging info',
-  run: cli.command(co.wrap(run))
-}
+Debug.topic = 'debug'
+Debug.description = 'outputs debugging info'
+
+module.exports = Debug

@@ -1,17 +1,17 @@
 'use strict'
 
-const co = require('co')
-const cli = require('heroku-cli-util')
+const {Command} = require('heroku-command')
 
-function * run (context) {
-  const inquirer = require('inquirer')
-  let answer = yield inquirer.prompt({type: 'password', message: 'enter a password', name: 'password'})
-  cli.debug(answer)
+class Prompt extends Command {
+  async run () {
+    const inquirer = require('inquirer')
+    let answer = await inquirer.prompt({type: 'password', message: 'enter a password', name: 'password'})
+    this.inspect(answer)
+  }
 }
 
-module.exports = {
-  topic: 'debug',
-  command: 'prompt',
-  description: 'Outputs debugging info',
-  run: cli.command(co.wrap(run))
-}
+Prompt.topic = 'debug'
+Prompt.command = 'prompt'
+Prompt.description = 'Outputs debugging info'
+
+module.exports = Prompt
