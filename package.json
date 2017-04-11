@@ -13,14 +13,14 @@
   "license": "ISC",
   "main": "index.js",
   "scripts": {
-    "test": "mocha && standard"
+    "test": "standard"
   },
   "dependencies": {
     "co": "4.6.0",
-    "heroku-cli-util": "6.0.7",
-    "inquirer": "1.0.2"
+    "heroku-cli-util": "6.1.17",
+    "inquirer": "3.0.6"
   },
   "devDependencies": {
-    "standard": "7.1.0"
+    "standard": "10.0.1"
   }
 }
