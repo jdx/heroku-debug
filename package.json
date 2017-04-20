@@ -21,7 +21,7 @@
     "inquirer": "3.0.6"
   },
   "devDependencies": {
-    "standard": "10.0.1"
+    "standard": "10.0.2"
   },
   "cli-engine": {
     "namespace": "heroku"
