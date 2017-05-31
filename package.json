@@ -3,17 +3,11 @@
   "description": "debugging plugin for the CLI",
   "version": "5.0.2",
   "author": "Jeff Dickey @dickeyxxx",
-  "repository": "dickeyxxx/heroku-debug",
   "bugs": {
     "url": "https://github.com/dickeyxxx/heroku-debug/issues"
   },
-  "keywords": [
-    "heroku-plugin"
-  ],
-  "license": "ISC",
-  "main": "index.js",
-  "scripts": {
-    "test": "standard"
+  "cli-engine": {
+    "namespace": "heroku"
   },
   "dependencies": {
     "co": "4.6.0",
@@ -23,7 +17,16 @@
   "devDependencies": {
     "standard": "10.0.2"
   },
-  "cli-engine": {
-    "namespace": "heroku"
+  "files": [
+    "commands"
+  ],
+  "keywords": [
+    "heroku-plugin"
+  ],
+  "license": "ISC",
+  "main": "commands/index.js",
+  "repository": "dickeyxxx/heroku-debug",
+  "scripts": {
+    "test": "standard"
   }
 }
