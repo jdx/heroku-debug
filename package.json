@@ -1,7 +1,7 @@
 {
   "name": "heroku-debug",
   "description": "debugging plugin for the CLI",
-  "version": "6.0.0-beta",
+  "version": "6.0.1-beta",
   "author": "Jeff Dickey @dickeyxxx",
   "bugs": {
     "url": "https://github.com/dickeyxxx/heroku-debug/issues"
@@ -11,9 +11,9 @@
   },
   "dependencies": {
     "co": "4.6.0",
-    "debug": "^3.1.0",
-    "heroku-cli-util": "7.0.2",
-    "inquirer": "5.0.1"
+    "debug": "^3.0.0",
+    "heroku-cli-util": "^7.0.0",
+    "inquirer": "^5.0.0"
   },
   "devDependencies": {
     "standard": "10.0.3"
