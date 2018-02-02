@@ -1,7 +1,7 @@
 {
   "name": "heroku-debug",
   "description": "debugging plugin for the CLI",
-  "version": "5.0.5",
+  "version": "6.0.0-beta",
   "author": "Jeff Dickey @dickeyxxx",
   "bugs": {
     "url": "https://github.com/dickeyxxx/heroku-debug/issues"
