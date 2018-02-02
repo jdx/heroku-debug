@@ -11,11 +11,12 @@
   },
   "dependencies": {
     "co": "4.6.0",
-    "heroku-cli-util": "6.1.17",
-    "inquirer": "3.0.6"
+    "debug": "^3.1.0",
+    "heroku-cli-util": "7.0.2",
+    "inquirer": "5.0.1"
   },
   "devDependencies": {
-    "standard": "10.0.2"
+    "standard": "10.0.3"
   },
   "files": [
     "commands"
