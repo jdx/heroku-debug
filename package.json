@@ -1,7 +1,7 @@
 {
   "name": "heroku-debug",
   "description": "debugging plugin for the CLI",
-  "version": "6.1.1-beta",
+  "version": "6.2.4-beta",
   "author": "Jeff Dickey @dickeyxxx",
   "bugs": {
     "url": "https://github.com/dickeyxxx/heroku-debug/issues"
@@ -28,6 +28,8 @@
   "main": "commands/index.js",
   "repository": "dickeyxxx/heroku-debug",
   "scripts": {
+    "prepack": "echo FOO",
+    "prepublishOnly": "echo FOO",
     "test": "standard"
   }
 }
